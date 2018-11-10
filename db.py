@@ -30,7 +30,7 @@ class DatabaseConnection:
 
         except:
             pprint('Cannot connect to the database.')
-
+#insert user into the db
     def insert_users(self, userId, username, email, password):
         insert_user = "INSERT INTO users(userId, username, email, password) VALUES('{}', '{}', '{}', '{}')".format(
             userId, username, email, password)
